@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+button, .btn {
+    cursor: pointer;
+    background-color: #8CC92D;
+    border: none;
+    height: 3em;
+    width: 7em;
+    font-size: 1em;
+}
+
+.small-screen {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    margin: auto;
+    background-color: black;
+    text-align: center;
+    z-index: 5;
+    color: white;
+    font-size: 2em;
+    display: none;
+
+    .text {
+        padding: 50% 0;
+    }
+}
+
+header {
+    background-color: #162936;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+
+    .logo img {
+        height: 3vw;
+        transition: 0.7s;
+    }
+
+    ul {
+        padding: 1.5vw 0;
+        display: flex;
+        list-style: none;
+        transition: 0.7s;
+
+        li a {
+            margin-left: 3vw;
+            color: #8CC92D;
+            font-weight: bold;
+            font-size: 1.6em;
+        }
+    }
+
+    input,
+    label {
+        display: none;
+        margin-right: 1em;
+    }
+
+    #menu:checked~.menu-box {
+        right: 0;
+        content: '/X';
+    }
+
+    .menu-box {
+        height: 100vh;
+        width: 100vw;
+        background-color: #1d2f3b;
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        transition: 0.4s ease;
+
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #162936;
+            margin-bottom: 5px;
+
+            .logo img {
+                height: 5em;
+            }
+
+            .material-symbols-outlined {
+                font-size: 3em;
+                color: white;
+            }
+        }
+
+        ul {
+            padding: 0;
+            text-align: center;
+
+            li {
+                background-color: #153963;
+                margin-bottom: 5px;
+                padding: 1.3em 0;
+                height: 2.5em;
+
+                a {
+                    color: white;
+                    font-weight: normal;
+                    text-shadow: none;
+
+                }
+            }
+
+            li:hover {
+                background-color: #334b66;
+
+                a {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+main {
+    display: grid;
+    gap: 1vw;
+    overflow: hidden;
+
+    .fa-rocketchat {
+        position: fixed;
+        right: 0.5em;
+        bottom: 2em;
+        background-color: #8CC92D;
+        font-size: 2.65em;
+        padding: 0.3em;
+        border-radius: 10px;
+        border: 1px solid white;
+        cursor: pointer;
+    }
+
+    .chatbox {
+        position: fixed;
+        right: -100%;
+        bottom: 1vw;
+        min-height: 30em;
+        min-width: 20em;
+        background-color: #f0f0f0;
+        transition: all 0.4s ease;
+        box-shadow: black -8px 6px 20px -10px;
+        z-index: 3;
+
+        .top {
+            min-height: 4em;
+            background-color: #162936;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                margin-left: 1vw;
+                line-height: 1.5em;
+
+                .dot {
+                    display: inline-block;
+                    height: 0.4em;
+                    width: 0.4em;
+                    border-radius: 5em;
+                    margin: 0 0.2em;
+                    background-color: #40ff3e;
+                }
+            }
+
+            .material-symbols-outlined {
+                margin-right: 0.4vw;
+                color: white;
+                font-size: 2em;
+                cursor: pointer;
+            }
+        }
+
+        .textbox input {
+            position: absolute;
+            bottom: 0;
+            width: 85%;
+            min-height: 2.5em;
+            margin: 1em calc(15% / 2);
+            border-radius: 2em;
+            padding-left: 10px;
+        }
+    }
+
+    #click {
+        display: none;
+    }
+
+    #click:checked~.chatbox {
+        right: 0.5em;
+    }
+}
+
+.achieve{
+    margin-top: 4em;
+    text-align: center;
+    padding: 3vw 20vw;
+    font-size: 1.4em;
+    background-color: #f0f0f0;
+
+    h2{
+        font-size: 2em;
+        margin-bottom: 2vw;
+    }
+
+    p{
+        text-align: justify;
+        line-height: 1.4em;
+    }
+}
+
+
+
+
+
+
+footer {
+    text-align: center;
+
+    .bgc {
+        background-color: #162936;
+
+        h3 {
+            padding-top: 2vw;
+            font-size: 3vw;
+            color: #8CC92D;
+            ;
+        }
+
+        .block {
+            color: white;
+            padding: 1vw 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .left {
+                width: 50%;
+                display: grid;
+                justify-content: center;
+                gap: 5vw;
+
+                .follow {
+                    color: rgb(145 162 173);
+                    font-size: 1em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-bottom: 1vw;
+
+                    a {
+                        margin-left: 0.5vw;
+                    }
+                }
+            }
+
+            .right {
+                width: 50%;
+                text-align: left;
+
+                .address {
+                    font-size: 1em;
+                    line-height: 2em;
+                    margin: 2vw 0;
+                }
+
+                form {
+                    width: 45%;
+                    margin: 0 2vw;
+
+                    .imp {
+                        color: yellow;
+                    }
+
+                    input,
+                    select,
+                    textarea {
+                        margin: 0.5vw 0 1vw 0;
+                        padding: 0.4vw;
+                        width: 100%;
+                        border-radius: 5px;
+                        resize: none;
+                    }
+
+                    input:hover,
+                    textarea:hover {
+                        opacity: 60%;
+                    }
+
+                    .btn {
+                        width: 7em;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 2vw 0;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1440px) {
+    button, .btn {
+        height: 2.3em;
+        width: 6em;
+    }
+    header{
+        background-color: #162936;
+        height: 4em;
+        justify-content: space-between;
+
+        .logo img {
+            height: 3.5em;
+            margin-left: 1em;
+        }
+
+        nav {
+            display: none;
+        }
+
+
+        label {
+            display: block;
+        }
+
+        .menu-box {
+            ul {
+                display: block;
+            }
+        }
+    }
+
+    .achieve{
+        margin-top: 3em;
+        padding: 3vw 10vw;
+
+        h2{
+            font-size: 1.5em;
+        }
+
+        p{
+            font-size: 0.8em;
+        }
+    }
+
+    footer {
+        .bgc {
+            padding: 1.2em 0;
+
+            h3 {
+                font-size: 3.2em;
+            }
+
+            .block {
+                flex-direction: column;
+                justify-content: center;
+
+                .left {
+                    width: 100%;
+                    justify-content: center;
+                    gap: 2vw;
+                    margin: 3em 0;
+
+                    iframe {
+                        width: 100%;
+                    }
+                }
+
+                .right {
+                    width: 90%;
+
+                    p {
+                        text-align: center;
+                    }
+
+                    form {
+                        width: 50%;
+                        min-width: 15em;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            font-size: 1em;
+            padding: 2em 0;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .small-screen{
+        display: block;
+    }
+    header, main, footer{
+        display: none;
+    }
+}
