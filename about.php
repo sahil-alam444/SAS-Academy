@@ -82,19 +82,15 @@
         <section class="gallery">
             <h3>GALLERY</h3>
             <div class="slider">
-                <div class="box"><img src="Media/About/comp.jpg" alt="" si></div>
-                <div class="box"><img src="Media/About/maths.jpg" alt=""></div>
-                <div class="box"><img src="Media/About/chemistry.jpg" alt=""></div>
-                <div class="box"><img src="Media/About/physics.jpg" alt=""></div>
-                <div class="box"><img src="Media/About/biology.jpg" alt=""></div>
-                <div class="box"><img src="Media/About/arts.jpg" alt=""></div>
-                <div class="box"><img src="Media/About/commerce.jpg" alt=""></div>
-                <div class="box"><img src="Media/About/jee.jp" alt=""></div>
-                <div class="box"><img src="Media/About/compsc-app.jpg" alt=""></div>
-                <div class="box"><img src="Media/About/economics.jpg" alt=""></div>
-                <div class="box"><img src="Media/About/engg-med.jpg" alt=""></div>
-                <div class="box"><img src="Media/About/tally-erp.jpg" alt=""></div>
-                <div class="box"><img src="Media/About/tax.jpg" alt=""></div>
+                <div class="box"><img src="Media/About/ART_25-01-06_23-42-50-715.jpg" alt="" si></div>
+                <div class="box"><img src="Media/About/Arts & English_25-01-08_23-35-46-157.jpg" alt=""></div>
+                <div class="box"><img src="Media/About/Basic_25-01-14_00-23-21-695.jpg" alt=""></div>
+                <div class="box"><img src="Media/About/Biology_25-01-06_20-14-46-486.jpg" alt=""></div>
+                <div class="box"><img src="Media/About/computer_25-01-14_00-19-33-531.jpg" alt=""></div>
+                <div class="box"><img src="Media/About/MATHEMATICS_25-01-07_11-12-40-200.jpg" alt=""></div>
+                <div class="box"><img src="Media/About/SAS_25-01-06_11-22-09-016.jpg" alt=""></div>
+                <div class="box"><img src="Media/About/Science_25-01-07_14-02-34-666.jpg" alt=""></div>
+                <div class="box"><img src="Media/About/SPOKEN ENGLISH_25-01-09_00-15-54-571.jpg" alt=""></div>
             </div>
 
             <div class="popup">

@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 
     <title>SAS Academy</title>
 
@@ -123,9 +124,9 @@
                     <span>M.Sc. in Anthropology</span>
                 </div>
                 <div class="box">
-                    <img src="Media/Teachers/Diasha mam.jpg" alt=""><br>
-                    <span class="imgtxt">Mrs. Diasha Banerjee</span><br>
-                    <span>B.A. English(H), Pursuing L.L.B.</span>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLY4aT6JxU4kE9F6X8YQ30MGiFd89dh10Wj5ozmejxYA&s" alt=""><br>
+                    <span class="imgtxt">Mrs. Alivia Sarkar</span><br>
+                    <span>B.A. Eng.(H), M.A. Eng.(H), Pursuing L.L.B.</span>
                 </div>
                 <div class="box">
                     <img src="Media/Teachers/Sayani mam.jpg" alt=""><br>
